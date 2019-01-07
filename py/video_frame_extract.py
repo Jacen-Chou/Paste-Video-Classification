@@ -1,3 +1,5 @@
+# 用opencv从视频中每隔固定帧数取帧图像
+
 import cv2
 import numpy as np
 
