@@ -39,7 +39,7 @@ while rval:  # 循环读取视频帧
             print("num_train: %d" % num_train)
             num_train += 1
         else:
-            cv2.imwrite('images/val/81/' + 'val_81_' + str(num_val) + '.jpg', frame)  # 存储为图像，验证集，概率0.3
+            cv2.imwrite('images/validation/81/' + 'val_81_' + str(num_val) + '.jpg', frame)  # 存储为图像，验证集，概率0.3
             print("num_val: %d" % num_val)
             num_val += 1
     #print(c)

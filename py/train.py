@@ -28,7 +28,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs):
         print('-' * 10)
 
         # Each epoch has a training and validation phase
-        for phase in ['train', 'val']:
+        for phase in ['train', 'validation']:
             if phase == 'train':
                 scheduler.step()
                 model.train(True)  # Set model to training mode
@@ -74,14 +74,14 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs):
                 phase, epoch_loss, epoch_acc))
 
             # deep copy the model
-            if phase == 'val' and epoch_acc > best_acc:
+            if phase == 'validation' and epoch_acc > best_acc:
                 best_acc = epoch_acc
                 best_model_wts = model.state_dict()
 
     time_elapsed = time.time() - since
     print('Training complete in {:.0f}m {:.0f}s'.format(
         time_elapsed // 60, time_elapsed % 60))
-    print('Best val Acc: {:4f}'.format(best_acc))
+    print('Best validation Acc: {:4f}'.format(best_acc))
 
     # load best model weights
     model.load_state_dict(best_model_wts)
@@ -100,7 +100,7 @@ if __name__ == '__main__':
             transforms.ToTensor(),
             transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
         ]),
-        'val': transforms.Compose([
+        'validation': transforms.Compose([
             transforms.Scale(256),
             transforms.CenterCrop(224),
             transforms.ToTensor(),
@@ -111,14 +111,14 @@ if __name__ == '__main__':
     # your image data file
     data_dir = 'E:/PythonProjects/PasteVideoClassification/images'
     image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
-                                              data_transforms[x]) for x in ['train', 'val']}
+                                              data_transforms[x]) for x in ['train', 'validation']}
     # wrap your data and label into Tensor
     dataloders = {x: torch.utils.data.DataLoader(image_datasets[x],
                                                  batch_size=4,
                                                  shuffle=True,
-                                                 num_workers=4) for x in ['train', 'val']}
+                                                 num_workers=4) for x in ['train', 'validation']}
 
-    dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'val']}
+    dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'validation']}
 
     # use gpu or not
     use_gpu = torch.cuda.is_available()

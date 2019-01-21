@@ -2,6 +2,10 @@
 # coding: utf-8
 
 # In[3]:
+
+
+# coding: utf-8
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -19,13 +23,15 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 # 参数
 learning_rate = 0.01
 momentum = 0.9
-epochs = 80000
+epochs = 40
 batch_size = 4
 display_step = 1
 shuffle = True
 num_classes = 4
 
-# In[5]:
+
+# In[4]:
+
 
 class SpatialNet(nn.Module):
 
@@ -90,7 +96,7 @@ model = SpatialNet()
 print(model)
 
 
-# In[ ]:
+# In[5]:
 
 
 # 数据准备
@@ -125,7 +131,7 @@ dataloders = {x: torch.utils.data.DataLoader(image_datasets[x],
 dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'validation']}
 
 
-# In[ ]:
+# In[6]:
 
 
 # 是否使用GPU
@@ -135,7 +141,8 @@ if use_gpu:
 
 print("use_gpu: " + str(use_gpu))
 
-# In[ ]:
+
+# In[7]:
 
 
 # 开始训练
@@ -252,7 +259,7 @@ for epoch in range(epochs):
             best_model_wts = model.state_dict()
             print("网络参数更新")
             # 保存最优参数
-            torch.save(best_model_wts, './parameter/params_vgg13.pth')
+            torch.save(best_model_wts, './parameter/two-stream.pth')
             best_matrix = copy.deepcopy(matrix)
 #             print("Model's state_dict:")
 #             for param_tensor in best_model_wts:
@@ -265,4 +272,83 @@ for epoch in range(epochs):
 time_elapsed = time.time() - since
 print('Training complete in {:.0f}h {:.0f}m {:.0f}s'.format(time_elapsed // 3600, (time_elapsed % 3600) // 60, time_elapsed % 60))
 print('Best validation Acc: {:4f}'.format(best_acc))
+
+
+# In[11]:
+
+
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+get_ipython().run_line_magic('matplotlib', 'inline')
+
+print('loss_train: ' + str(loss_train))
+print('loss_val: ' + str(loss_val))
+print('acc_train: ' + str(acc_train))
+print('acc_val: ' + str(acc_val))
+
+# 绘制第一个图，在一幅图上画两条曲线
+plt.figure()
+plt.title("Loss",fontsize=16)
+plt.xlabel("Epochs")
+plt.ylabel("Loss")
+plt.xticks(np.arange(1, 41, 2.0))
+plt.plot(range(1,epochs + 1), loss_train,color='r', linewidth = 3.0, label='train')
+plt.plot(range(1,epochs + 1), loss_val,color='b', linewidth = 3.0, label='validation')
+plt.legend()  # 设置图例和其中的文本的显示
+
+# 绘制第二个图，在一幅图上画两条曲线
+plt.figure()
+plt.title("Predicted accuracy",fontsize=16)
+plt.xlabel("Epochs")
+plt.ylabel("Acc")
+plt.xticks(np.arange(1, 41, 2.0))
+plt.plot(range(1,epochs + 1), acc_train,color='r', linewidth = 3.0, label='train')
+plt.plot(range(1,epochs + 1), acc_val,color='b', linewidth = 3.0, label='validation')
+plt.legend()  # 设置图例和其中的文本的显示
+
+plt.show()
+
+
+# In[9]:
+
+
+def imshow(img):
+    img = img / 2 + 0.5     # unnormalize
+    npimg = img.numpy()
+    plt.imshow(np.transpose(npimg, (1, 2, 0)))
+
+classes = ('75', '77', '79', '81')
+
+dataiter = iter(dataloders['validation'])
+images, labels = dataiter.next()
+print(images.size())
+# print images
+imshow(torchvision.utils.make_grid(images))
+print('GroundTruth: ', ' '.join('%5s' % classes[labels[z]] for z in range(4)))
+
+# test
+outputs = model(images.cuda())
+_, predicted = torch.max(outputs, 1)
+print('Predicted: ', ' '.join('%5s' % classes[predicted[z]] for z in range(4)))
+
+
+# In[10]:
+
+
+conc = {
+    '0': '75  ',
+    '1': '77  ',
+    '2': '79  ',
+    '3': '81  '
+}
+
+print("\t   Predicted\n")
+print("\t   75\t77\t79\t81\n")
+for i in range(0, num_classes):
+    print("Actual ", end='')
+    print(conc[str(i)], end='')
+    for j in range(0, num_classes):
+        print(str(best_matrix[i][j]) + '\t', end='')
+    print('\n')
 

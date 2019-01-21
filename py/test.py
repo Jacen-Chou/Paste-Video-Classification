@@ -63,7 +63,7 @@ data_transforms = {
         transforms.ToTensor(),
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ]),
-    'val': transforms.Compose([
+    'validation': transforms.Compose([
         transforms.Resize(256),
         transforms.CenterCrop(224),
         transforms.ToTensor(),
@@ -74,14 +74,14 @@ data_transforms = {
 # your image data file
 data_dir = '../images/'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
-                                          data_transforms[x]) for x in ['train', 'val']}
+                                          data_transforms[x]) for x in ['train', 'validation']}
 # torchvision.datasets.ImageFolder返回的是list，这里用torch.utils.data.DataLoader类将list类型的输入数据封装成Tensor数据格式
 dataloders = {x: torch.utils.data.DataLoader(image_datasets[x],
                                              batch_size = batch_size,
                                              shuffle = shuffle,
-                                             num_workers = 0) for x in ['train', 'val']}
+                                             num_workers = 0) for x in ['train', 'validation']}
 
-dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'val']}
+dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'validation']}
 
 for data in dataloders['train']:
     # get the inputs

@@ -38,7 +38,7 @@ data_transforms = {
         transforms.ToTensor(),
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ]),
-    'val': transforms.Compose([
+    'validation': transforms.Compose([
         transforms.Resize(256),
         transforms.CenterCrop(224),
         transforms.ToTensor(),
@@ -49,13 +49,13 @@ data_transforms = {
 # your image data file
 data_dir = 'E:/PythonProjects/PasteVideoClassification/images'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
-                                          data_transforms[x]) for x in ['train', 'val']}
+                                          data_transforms[x]) for x in ['train', 'validation']}
 # torchvision.datasets.ImageFolder返回的是list，这里用torch.utils.data.DataLoader类将list类型的输入数据封装成Tensor数据格式
 dataloders = {x: torch.utils.data.DataLoader(image_datasets[x],
                                              batch_size,
-                                             shuffle) for x in ['train', 'val']}
+                                             shuffle) for x in ['train', 'validation']}
 
-dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'val']}
+dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'validation']}
 
 # 是否使用GPU
 use_gpu = torch.cuda.is_available()
@@ -139,7 +139,7 @@ test_loss = 0.0
 test_acc = 0
 
 # Iterate over data.
-for data in dataloders['val']:
+for data in dataloders['validation']:
     # get the inputs
     inputs, labels = data
 
@@ -163,8 +163,8 @@ for data in dataloders['val']:
     test_loss += loss.data[0]
     test_acc += torch.sum(predict == labels.data)
 
-test_loss = test_loss / dataset_sizes['val']
-test_acc = test_acc / dataset_sizes['val']
+test_loss = test_loss / dataset_sizes['validation']
+test_acc = test_acc / dataset_sizes['validation']
 
 print('Test: Loss: {:.4f} Acc: {:.4f}'.format(test_loss, test_acc))
 

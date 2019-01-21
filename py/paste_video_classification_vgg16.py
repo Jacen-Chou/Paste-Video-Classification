@@ -55,7 +55,7 @@ data_transforms = {
         transforms.ToTensor(),
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ]),
-    'val': transforms.Compose([
+    'validation': transforms.Compose([
         transforms.Resize(256),
         transforms.CenterCrop(224),
         transforms.ToTensor(),
@@ -66,13 +66,13 @@ data_transforms = {
 # your image data file
 data_dir = './images/'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
-                                          data_transforms[x]) for x in ['train', 'val']}
+                                          data_transforms[x]) for x in ['train', 'validation']}
 # torchvision.datasets.ImageFolder返回的是list，这里用torch.utils.data.DataLoader类将list类型的输入数据封装成Tensor数据格式
 dataloders = {x: torch.utils.data.DataLoader(image_datasets[x],
                                              batch_size,
-                                             shuffle) for x in ['train', 'val']}
+                                             shuffle) for x in ['train', 'validation']}
 
-dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'val']}
+dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'validation']}
 
 
 # In[4]:
@@ -112,7 +112,7 @@ for epoch in range(epochs):
         print('Epoch [{}/{}]:'.format(epoch + 1, epochs))
 
     # 每一轮都跑一遍训练集和验证集
-    for phase in ['train', 'val']:
+    for phase in ['train', 'validation']:
         if phase == 'train':
             i = 1
             j = 1
@@ -178,17 +178,17 @@ for epoch in range(epochs):
             loss_train.append(epoch_loss_train)
             acc_train.append(epoch_acc_train)            
         else:
-            epoch_loss_val = running_loss / dataset_sizes['val']
-            epoch_acc_val = running_corrects.item() / dataset_sizes['val']
+            epoch_loss_val = running_loss / dataset_sizes['validation']
+            epoch_acc_val = running_corrects.item() / dataset_sizes['validation']
             loss_val.append(epoch_loss_val)
             acc_val.append(epoch_acc_val)
 
         if epoch % display_step == 0 and j == 2:
             print('\ttrain Loss: {:.4f} Acc: {:.4f}%'.format(epoch_loss_train, epoch_acc_train*100))
-            print('\tval Loss: {:.4f} Acc: {:.4f}%'.format(epoch_loss_val, epoch_acc_val*100))
+            print('\tvalidation Loss: {:.4f} Acc: {:.4f}%'.format(epoch_loss_val, epoch_acc_val*100))
 
         # deep copy the model
-        if phase == 'val' and epoch_acc_val > best_acc:
+        if phase == 'validation' and epoch_acc_val > best_acc:
             best_acc = epoch_acc_val
             best_model_wts = model.state_dict()
             print("网络参数更新")
@@ -202,7 +202,7 @@ for epoch in range(epochs):
 # 计算训练所耗时间
 time_elapsed = time.time() - since
 print('Training complete in {:.0f}h {:.0f}m {:.0f}s'.format(time_elapsed // 3600, (time_elapsed % 3600) // 60, time_elapsed % 60))
-print('Best val Acc: {:4f}'.format(best_acc))
+print('Best validation Acc: {:4f}'.format(best_acc))
 
 # 保存最优参数
 torch.save(best_model_wts, 'params_vgg16.pth')
@@ -228,7 +228,7 @@ plt.xlabel("Epochs")
 plt.ylabel("Loss")
 plt.xticks(np.arange(1, 21, 1.0))
 plt.plot(range(1,epochs + 1), loss_train,color='r', linewidth = 3.0, label='train')
-plt.plot(range(1,epochs + 1), loss_val,color='b', linewidth = 3.0, label='val')
+plt.plot(range(1,epochs + 1), loss_val,color='b', linewidth = 3.0, label='validation')
 plt.legend()  # 设置图例和其中的文本的显示
 
 # 绘制第二个图，在一幅图上画两条曲线
@@ -238,7 +238,7 @@ plt.xlabel("Epochs")
 plt.ylabel("Acc")
 plt.xticks(np.arange(1, 21, 1.0))
 plt.plot(range(1,epochs + 1), acc_train,color='r', linewidth = 3.0, label='train')
-plt.plot(range(1,epochs + 1), acc_val,color='b', linewidth = 3.0, label='val')
+plt.plot(range(1,epochs + 1), acc_val,color='b', linewidth = 3.0, label='validation')
 plt.legend()  # 设置图例和其中的文本的显示
 
 plt.show()
@@ -254,7 +254,7 @@ def imshow(img):
 
 classes = ('75', '77', '79', '81')
 
-dataiter = iter(dataloders['val'])
+dataiter = iter(dataloders['validation'])
 images, labels = dataiter.next()
 print(images.size())
 # print images

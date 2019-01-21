@@ -37,7 +37,7 @@ data_transforms = {
         transforms.ToTensor(),
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ]),
-    'val': transforms.Compose([
+    'validation': transforms.Compose([
         transforms.Resize(256),
         transforms.CenterCrop(224),
         transforms.ToTensor(),
@@ -48,13 +48,13 @@ data_transforms = {
 # your image data file
 data_dir = 'E:/PythonProjects/PasteVideoClassification/images'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
-                                          data_transforms[x]) for x in ['train', 'val']}
+                                          data_transforms[x]) for x in ['train', 'validation']}
 # torchvision.datasets.ImageFolder返回的是list，这里用torch.utils.data.DataLoader类将list类型的输入数据封装成Tensor数据格式
 dataloders = {x: torch.utils.data.DataLoader(image_datasets[x],
                                              batch_size,
-                                             shuffle) for x in ['train', 'val']}
+                                             shuffle) for x in ['train', 'validation']}
 
-dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'val']}
+dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'validation']}
 
 # 是否使用GPU
 use_gpu = torch.cuda.is_available()
@@ -80,7 +80,7 @@ for epoch in range(epochs):
         print('Epoch [{}/{}]:'.format(epoch + 1, epochs))
 
     # 每一轮都跑一遍训练集和验证集
-    for phase in ['train', 'val']:
+    for phase in ['train', 'validation']:
         if phase == 'train':
             # exp_lr_scheduler.step()
             model.train()  # 把module设成training模式，对Dropout和BatchNorm有影响
@@ -140,7 +140,7 @@ for epoch in range(epochs):
             print('\t{} Loss: {:.4f} Acc: {:.4f}%'.format(phase, epoch_loss, epoch_acc))
 
         # deep copy the model
-        if phase == 'val' and epoch_acc > best_acc:
+        if phase == 'validation' and epoch_acc > best_acc:
             best_acc = epoch_acc
             best_model_wts = model.state_dict()
     print('-' * 20)
@@ -148,7 +148,7 @@ for epoch in range(epochs):
 # 计算训练所耗时间
 time_elapsed = time.time() - since
 print('Training complete in {:.0f}h {:.0f}m {:.0f}s'.format(time_elapsed // 3600, (time_elapsed % 3600) // 60, time_elapsed % 60))
-print('Best val Acc: {:4f}'.format(best_acc))
+print('Best validation Acc: {:4f}'.format(best_acc))
 
 # 保存最优参数
 model.load_state_dict(best_model_wts)

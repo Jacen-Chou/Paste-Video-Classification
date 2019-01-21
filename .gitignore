@@ -104,3 +104,5 @@ venv.bak/
 .mypy_cache/
 
 /images/
+/flow_images/
+/frame_diff/
