@@ -103,6 +103,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-/images/
-/flow_images/
-/frame_diff/
+/4_classes_classification/images/
+/4_classes_classification/flow_images/
+/4_classes_classification/frame_diff/
