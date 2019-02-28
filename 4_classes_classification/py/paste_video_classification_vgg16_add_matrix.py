@@ -65,7 +65,7 @@ data_transforms = {
 }
 
 # your image data file
-data_dir = './images/'
+data_dir = '../images/'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x]) for x in ['train', 'validation']}
 # torchvision.datasets.ImageFolder返回的是list，这里用torch.utils.data.DataLoader类将list类型的输入数据封装成Tensor数据格式
