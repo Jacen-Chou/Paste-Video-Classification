@@ -36,9 +36,9 @@
         1min - validation 验证集
         2min - test 测试集
         6:2:2
-        3000
-        1000
-        1000
+        1500
+        500
+        500
         ```
         
         用验证集求Loss，把验证集中最低的Loss的模型参数保存下来
@@ -62,3 +62,27 @@
     + 顶会：https://www.ccf.org.cn/xspj/rgzn/
     + 要发顶会的话，则必须要在公有数据集上验证
     + 尽量别发EI文章
+
+#### 20190305 跟师兄讨论
+1. 计算测试集正确率
+2. 查找除了方差以外的其他数据稳定性方法，如最大最小差值，差分绝对值之和等
+   “中午去图书馆找了找应用统计学里关于离散程度的描述，除了标准差和方差，还有
+   很多，如极差range，平均离差 mean deviation，四分位数极差（interquantile range），
+   箱线图，偏度，峰度，离散系数（标准差除以平均值），标准分数”
+3. 近期去设计如何解决高分辨率图像分类的实验方案
+
+#### 20190307 跟师兄讨论
+1. 用新的256*256测试集跑vgg13网络
+2. 在1920*1080测试集上滑动窗口224*224，送入网络检测
+3. 调整学习率（1）VGG，step,（2）VGG cosin,论文:《Bag of Tricks for Image Classification with Convolutional Neural Networks》
+4. 加入SPPNet,论文:《Spatial Pyramid Pooling in Deep Convolutional Networks for visual Recognition》
+5. 验证集正确率大于训练集正确率，解决此问题。尝试：把训练集和验证集的预处理方式设置成一样
+6. 建议用一张卡跑，可以同时进行多个实验
+7. 修改transforms.Normalize参数，mean（平均值）和std（标准差）都自己算，根据1920*1080的原图来算
+    以RGB中的R为例，把所有R通道的值加起来，再求'mean=sum÷1920÷1080÷图片数量', 'std=标准差'
+    https://pytorch.org/docs/stable/torchvision/transforms.html?highlight=normalize#torchvision.transforms.Normalize
+    参考博客代码：https://blog.csdn.net/weixin_38533896/article/details/85951903
+8. 增加数据集数量，要求原图1920*1080，训练集3000，验证集1000，测试集1000，按视频时间依次顺序取，最开始一段作训练集，
+    中间一段作验证集，最后一段作测试集，不再随机，一共3min20s
+9. 更改学习率设置，初步打算每10epochs降低，除以10
+10. 除了vgg13，再跑ResNet、DenseNet，作比较，取效果最好的网络
