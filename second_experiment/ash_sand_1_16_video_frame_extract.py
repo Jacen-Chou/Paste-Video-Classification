@@ -10,7 +10,7 @@ import numpy as np
 import random
 
 # 视频名字，以浓度命名
-density = 645
+density = 200
 dir_names = ['train/', 'validation/', 'test/', 'train_224/', 'validation_224/', 'test_224/']
 
 
