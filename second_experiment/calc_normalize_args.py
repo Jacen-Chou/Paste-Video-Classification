@@ -12,10 +12,10 @@ temp_tensor = torch.zeros(1080, 1920, 3, dtype=torch.float)
 temp_tensor = temp_tensor.cuda()
 density = 200  # 初始浓度
 
+f = open('./result/calc_normalize_args.txt', 'w')
 since = time.time()
 
 while True:
-    f = open('./result/calc_normalize_args.txt', 'w')
     # 把所有图片的RGB值分别加起来，存入temp
     for num_train in range(1, 3001):
         img_path = './images_paste/images_ash_sand_1_16/train/' + str(density) + '/train_' + str(density) \
@@ -32,7 +32,6 @@ while True:
     print('Time elapsed {:.0f}h {:.0f}m {:.0f}s'.format(time_elapsed // 3600, (time_elapsed % 3600) // 60, time_elapsed % 60))
     f.write('%d' % density)
     f.write('Time elapsed {:.0f}h {:.0f}m {:.0f}s\n'.format(time_elapsed // 3600, (time_elapsed % 3600) // 60, time_elapsed % 60))
-    f.close()
 
     if density == 780:
         break
@@ -64,7 +63,6 @@ print('R_std: %d' % R_std)
 print('G_std: %d' % G_std)
 print('B_std: %d' % B_std)
 
-f = open('./result/calc_normalize_args.txt', 'w')
 f.write('R_mean: %d\n' % R_mean)
 f.write('G_mean: %d\n' % G_mean)
 f.write('B_mean: %d\n' % B_mean)
