@@ -1,10 +1,11 @@
 
 # coding: utf-8
 
-# In[ ]:
+# In[2]:
 
 
 # coding: utf-8
+# 增加了test数据集
 
 import torch
 import torch.nn as nn
@@ -18,21 +19,18 @@ import time
 import os
 import copy
 
-# 增加了test数据集
-
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 
 # 参数
-learning_rate = 0.001
+learning_rate = 0.1
 momentum = 0.9
-epochs = 50
-batch_size = 45
+epochs = 60
+batch_size = 150
 display_step = 1
-shuffle = True
 num_classes = 45
 
 
-# In[2]:
+# In[5]:
 
 
 # 加载vgg13预训练模型
@@ -44,29 +42,25 @@ model.classifier = nn.Sequential(nn.Linear(512 * 7 * 7, 4096),
                                  nn.ReLU(True),
                                  nn.Dropout(),
                                  nn.Linear(4096, num_classes))
+# 使用多块GPU
+model = nn.DataParallel(model)
+model.load_state_dict(torch.load('./parameter/ash_sand_1_16_vgg13_add_test_params.pth'))
 
 
-# In[3]:
+# In[6]:
 
 
 # 数据准备
 # crop:裁剪 resize:缩放 flip:翻转
 data_transforms = {
     'train': transforms.Compose([
-        transforms.RandomResizedCrop(224),
+        transforms.Resize(224),
         transforms.RandomHorizontalFlip(),
         transforms.ToTensor(),
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ]),
     'validation': transforms.Compose([
-        transforms.Resize(256),
-        transforms.CenterCrop(224),
-        transforms.ToTensor(),
-        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
-    ]),
-    'test': transforms.Compose([
-        transforms.Resize(256),
-        transforms.CenterCrop(224),
+        transforms.Resize(224),
         transforms.ToTensor(),
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
     ]),
@@ -75,22 +69,32 @@ data_transforms = {
 # your image data file
 data_dir = './images_paste/images_ash_sand_1_16/'
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
-                                          data_transforms[x]) for x in ['train', 'validation', 'test']}
+                                          data_transforms[x]) for x in ['train', 'validation']}
 # torchvision.datasets.ImageFolder返回的是list，这里用torch.utils.data.DataLoader类将list类型的输入数据封装成Tensor数据格式
 dataloders = {x: torch.utils.data.DataLoader(image_datasets[x],
                                              batch_size = batch_size,
-                                             shuffle = rue,
+                                             shuffle = True,
                                              num_workers = 50) for x in ['train', 'validation']}
+dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'validation']}
 
-dataloders_test = torch.utils.data.DataLoader(image_datasets['test'],
+
+# In[7]:
+
+
+data_transforms_test = transforms.Compose([
+    transforms.Resize(224),
+    transforms.ToTensor(),
+    transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])
+])
+data_dir_test = './images_paste/images_ash_sand_1_16/test/'
+image_datasets_test = datasets.ImageFolder(data_dir_test, data_transforms_test)
+dataloders_test = torch.utils.data.DataLoader(image_datasets_test,
                                              batch_size = batch_size,
                                              shuffle = False,
                                              num_workers = 50)
 
-dataset_sizes = {x: len(image_datasets[x]) for x in ['train', 'validation', 'test']}
 
-
-# In[4]:
+# In[8]:
 
 
 # 是否使用GPU
@@ -107,7 +111,7 @@ loss_fn = nn.CrossEntropyLoss()
 optimizer = optim.SGD(model.parameters(), learning_rate, momentum)
 
 # 定义学习率的变化策略，这里采用torch.optim.lr_scheduler模块的StepLR类，表示每隔step_size个epoch就将学习率降为原来的gamma倍
-# exp_lr_scheduler = lr_scheduler.StepLR(optimizer_ft, step_size=7, gamma=0.1)
+exp_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=20, gamma=0.1)
 
 
 # In[ ]:
@@ -129,6 +133,9 @@ for epoch in range(epochs):
     if epoch % display_step == 0:
         print('Epoch [{}/{}]:'.format(epoch + 1, epochs))
         f.write('Epoch [{}/{}]:\n'.format(epoch + 1, epochs))
+
+    # 调整学习率
+    exp_lr_scheduler.step()
 
     # 每一轮都跑一遍训练集和验证集
     for phase in ['train', 'validation']:
@@ -172,7 +179,7 @@ for epoch in range(epochs):
             running_loss += loss.item()
             running_corrects += torch.sum(preds == labels.data)
             if phase == 'validation':
-                for k in range(0, num_classes):
+                for k in range(0, batch_size):
                     matrix[labels.data.cpu().numpy()[k]][preds.cpu().numpy()[k]] += 1
 
             print('\t{} {}-{}: Loss: {:.4f} Acc: {:.4f}%'.format(phase, epoch + 1, batch_num, loss.item()/batch_size, 1.0*torch.sum(preds == labels.data).item()/batch_size*100))
@@ -205,7 +212,7 @@ for epoch in range(epochs):
             print("Network parameter update.")
             f.write("Network parameter update.\n")
             # 保存最优参数
-            torch.save(best_model_wts, './parameter/ash_sand_1_16_vgg13_params.pth')
+            torch.save(best_model_wts, './parameter/ash_sand_1_16_vgg13_add_test_params.pth')
             best_matrix = copy.deepcopy(matrix)
     time_elapsed = time.time() - since
     print('Time passed {:.0f}h {:.0f}m {:.0f}s'.format(time_elapsed // 3600, (time_elapsed % 3600) // 60, time_elapsed % 60))
@@ -222,7 +229,7 @@ f.write('Best validation Acc: {:4f}\n'.format(best_acc))
 f.close()
 
 
-# In[8]:
+# In[6]:
 
 
 import numpy as np
@@ -246,7 +253,7 @@ plt.figure()
 plt.title("Loss",fontsize=16)
 plt.xlabel("Epochs")
 plt.ylabel("Loss")
-plt.xticks(np.arange(1, 151, 10.0))
+plt.xticks(np.arange(1, epochs + 1, 10.0))
 plt.plot(range(1,epochs + 1), loss_train,color='r', linewidth = 3.0, label='train')
 plt.plot(range(1,epochs + 1), loss_val,color='b', linewidth = 3.0, label='validation')
 plt.legend()  # 设置图例和其中的文本的显示
@@ -256,7 +263,7 @@ plt.figure()
 plt.title("Predicted accuracy",fontsize=16)
 plt.xlabel("Epochs")
 plt.ylabel("Acc")
-plt.xticks(np.arange(1, 151, 10.0))
+plt.xticks(np.arange(1, epochs + 1, 10.0))
 plt.plot(range(1,epochs + 1), acc_train,color='r', linewidth = 3.0, label='train')
 plt.plot(range(1,epochs + 1), acc_val,color='b', linewidth = 3.0, label='validation')
 plt.legend()  # 设置图例和其中的文本的显示
@@ -264,11 +271,10 @@ plt.legend()  # 设置图例和其中的文本的显示
 plt.show()
 
 
-# In[9]:
+# In[8]:
 
 
 from openpyxl import Workbook # xlsx
-
 
 def save(data, path):
     # xlsx
@@ -281,15 +287,17 @@ def save(data, path):
             booksheet.cell(i+1, j+1).value = data[i][j]
     workbook.save(path)
 
-save(best_matrix,'./result/ash_sand_1_16_vgg13_confusion_matrix.xlsx')
+save(best_matrix,'./result/ash_sand_1_16_vgg13_add_test_confusion_matrix.xlsx')
 
 
-# In[ ]:
+# In[42]:
+
 
 # 开始测试
 since = time.time()
 model.eval()
 number = 0
+matrix2 = [[0 for i in range(500)] for i in range(num_classes)]
 f = open('./result/ash_sand_1_16_vgg13_add_test_result.txt', 'a')
 print("=====start test=====")
 f.write("=====start test=====")
@@ -298,7 +306,7 @@ f.write("=====start test=====")
 for data in dataloders_test:
     # get the inputs
     inputs, labels = data
-    print('labels: ' + labels.data.cpu().numpy())
+    print('labels: ' + str(labels.data.cpu().numpy()))
     f.write('labels: ' + str(labels.data.cpu().numpy()) + '\n')
 
     # PyTorch更新至0.4.0后，将Variable和Tensor合并
@@ -317,9 +325,10 @@ for data in dataloders_test:
 
     # 得到模型预测该样本属于哪个类别的信息
     _, preds = torch.max(outputs.data, 1)
-    print('preds: ' + preds.data.cpu().numpy())
+    print('preds: ' + str(preds.data.cpu().numpy()))
     f.write('preds: ' + str(preds.data.cpu().numpy()) + '\n')
     for k in range(batch_size):
+        matrix2[labels.data.cpu().numpy()[k]][number] = preds.cpu().numpy()[k]
         number += 1
         if number == 500:
             number = 0
@@ -327,3 +336,88 @@ for data in dataloders_test:
 time_elapsed = time.time() - since
 print('Test complete in {:.0f}h {:.0f}m {:.0f}s'.format(time_elapsed // 3600, (time_elapsed % 3600) // 60, time_elapsed % 60))
 f.close()
+
+
+# In[58]:
+
+
+# conc 浓度
+matrix_conc = [[0 for i in range(500)] for i in range(num_classes)]
+concentration = []
+density = 200
+while True:
+    concentration.append(density)
+    if density == 780:
+        break
+    if density < 600:
+        density += 50
+    else:
+        density += 5
+print(concentration)
+for x in range(num_classes):
+    for y in range(500):
+        matrix_conc[x][y] = matrix2[x][y] - concentration[x]
+
+for label in range(num_classes):
+    count = 0
+    print(label)
+    for k in range(500):
+        if matrix2[label][k] == label:
+            count += 1
+    print(" - 预测正确数量：" + str(count))
+        # 方差
+    var = np.var(matrix_conc[label])
+    print(" - 方差：" + str(var))
+
+
+# In[60]:
+
+
+var_sum = 0
+for label in range(num_classes):
+    var_sum += np.var(matrix_conc[label])
+var_ave = var_sum / num_classes
+print("平均方差：" + str(var_ave))
+
+
+# In[61]:
+
+
+acc_count = 0
+for label in range(num_classes):
+    for k in range(500):
+        if matrix2[label][k] == label:
+            acc_count += 1
+print("测试集正确率：" + str(acc_count/len(image_datasets['test'])))
+
+
+# In[62]:
+
+
+# 75%-78%浓度方差
+var_sum2 = 0
+for label in range(38, 45):
+    var_sum2 += np.var(matrix_conc[label])
+var_ave2 = var_sum2 / num_classes
+print("75%-78%浓度平均方差：" + str(var_ave2))
+
+
+# In[63]:
+
+
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as plt
+get_ipython().run_line_magic('matplotlib', 'inline')
+
+for label in range(num_classes):
+    plt.figure(figsize=(40,5),dpi=80)
+    plt.title(str(conc[label]),fontsize=16)
+    plt.xlabel("Epochs")
+    plt.ylabel("predict")
+    plt.xticks(np.arange(0, 500, 10))
+    plt.plot(range(500), matrix_conc[label],color='r', label='600')
+    plt.legend()  # 设置图例和其中的文本的显示
+
+plt.show()
+

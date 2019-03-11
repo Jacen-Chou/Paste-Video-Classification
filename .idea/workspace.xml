@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3b618c2-e395-40c9-a2ec-39b5690f3343" name="Default" comment="讨论记录">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/second_experiment/result/ash_sand_1_16_vgg13_混淆矩阵.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/second_experiment/result/pure_vgg13_混淆矩阵.xlsx" afterPath="" />
+    <list default="true" id="d3b618c2-e395-40c9-a2ec-39b5690f3343" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/README.md" afterPath="$PROJECT_DIR$/docs/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13_add_test.py" afterPath="$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13_add_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract.py" afterPath="$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/second_experiment/test.py" afterPath="$PROJECT_DIR$/second_experiment/test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/second_experiment/video_frame_extract.py" afterPath="$PROJECT_DIR$/second_experiment/video_frame_extract.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,10 +20,10 @@
     <SUITE FILE_PATH="coverage/Paste_Video_Classification$LK_track.coverage" NAME="LK_track Coverage Results" MODIFIED="1546943125214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/two_stream" />
     <SUITE FILE_PATH="coverage/Paste_Video_Classification$mkdir.coverage" NAME="mkdir Coverage Results" MODIFIED="1548172739693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
     <SUITE FILE_PATH="coverage/Paste_Video_Classification$ash_sand_1_16_video_frame_extract_test_1920_1080.coverage" NAME="ash_sand_1_16_video_frame_extract_test_1920_1080 Coverage Results" MODIFIED="1552012003040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
-    <SUITE FILE_PATH="coverage/Paste_Video_Classification$rename.coverage" NAME="rename Coverage Results" MODIFIED="1552142391425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/我的文档/我的照片/刘雪" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$rename.coverage" NAME="rename Coverage Results" MODIFIED="1552271046130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/我的文档/我的照片/刘雪" />
     <SUITE FILE_PATH="coverage/Paste_Video_Classification$paste_video_classification_vgg16_add_matrix.coverage" NAME="paste_video_classification_vgg16_add_matrix Coverage Results" MODIFIED="1548650980592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/4_classes_classification/py" />
     <SUITE FILE_PATH="coverage/Paste_Video_Classification$rename__1_.coverage" NAME="rename (1) Coverage Results" MODIFIED="1551147772609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/我的文档/我的照片/刘雪" />
-    <SUITE FILE_PATH="coverage/Paste_Video_Classification$test.coverage" NAME="test Coverage Results" MODIFIED="1552051435471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$test.coverage" NAME="test Coverage Results" MODIFIED="1552274874035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
     <SUITE FILE_PATH="coverage/Paste_Video_Classification$mkdir__1_.coverage" NAME="mkdir (1) Coverage Results" MODIFIED="1548162138325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
     <SUITE FILE_PATH="coverage/Paste_Video_Classification$stability_test_img.coverage" NAME="stability_test_img Coverage Results" MODIFIED="1550819866024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
     <SUITE FILE_PATH="coverage/Paste_Video_Classification$ash_sand_1_16_video_frame_extract_test_1920_2A1080.coverage" NAME="ash_sand_1_16_video_frame_extract_test_1920%2A1080 Coverage Results" MODIFIED="1551927334117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
@@ -35,7 +33,7 @@
       <file leaf-file-name="mkdir.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/second_experiment/mkdir.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="0">
               <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
               <folding />
             </state>
@@ -57,10 +55,10 @@
       <file leaf-file-name="ash_sand_1_16_photo_classification_vgg13_add_test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13_add_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="200" column="66" lean-forward="true" selection-start-line="200" selection-start-column="66" selection-end-line="200" selection-end-column="66" />
+            <state relative-caret-position="2006">
+              <caret line="128" column="57" lean-forward="false" selection-start-line="128" selection-start-column="57" selection-end-line="128" selection-end-column="57" />
               <folding>
-                <element signature="e#46#58#0" expanded="true" />
+                <element signature="e#59#71#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +68,8 @@
         <entry file="file://$PROJECT_DIR$/docs/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="425">
-                <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+              <first_editor relative-caret-position="1445">
+                <caret line="85" column="36" lean-forward="false" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -79,12 +77,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ash_sand_1_16_video_frame_extract_test_1920_1080.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ash_sand_1_16_video_frame_extract.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-289">
+              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding>
+                <element signature="e#152#161#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ash_sand_1_16_video_frame_extract_test_1920_1080.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract_test_1920_1080.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-              <folding />
+            <state relative-caret-position="206">
+              <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+              <folding>
+                <element signature="e#80#93#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,8 +104,8 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/second_experiment/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="170">
+              <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -117,6 +129,7 @@
       <find>zip</find>
       <find>tr</find>
       <find>*</find>
+      <find>learning_rate</find>
     </findStrings>
     <replaceStrings>
       <replace>81</replace>
@@ -148,13 +161,15 @@
         <option value="$PROJECT_DIR$/second_experiment/stability_test_img.py" />
         <option value="$PROJECT_DIR$/second_experiment/video_frame_extract-Copy.py" />
         <option value="$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13-Copy1.py" />
-        <option value="$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13_add_test.py" />
         <option value="$PROJECT_DIR$/second_experiment/video_frame_extract.py" />
         <option value="$USER_HOME$/Desktop/ash_sand_1_16_video_frame_extract_test_1920%2A1080.py" />
         <option value="$USER_HOME$/Desktop/ash_sand_1_16_video_frame_extract_test_1920_1080.py" />
-        <option value="$PROJECT_DIR$/second_experiment/test.py" />
         <option value="$PROJECT_DIR$/docs/README.md" />
+        <option value="$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13_add_test.py" />
+        <option value="$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract_test_1920_1080.py" />
         <option value="E:/我的文档/我的照片/刘雪/rename.py" />
+        <option value="$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract.py" />
+        <option value="$PROJECT_DIR$/second_experiment/test.py" />
       </list>
     </option>
   </component>
@@ -165,8 +180,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1974" />
-    <option name="y" value="-97" />
+    <option name="x" value="1847" />
+    <option name="y" value="-88" />
     <option name="width" value="812" />
     <option name="height" value="565" />
   </component>
@@ -246,7 +261,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.rename">
+  <component name="RunManager" selected="Python.test">
     <configuration name="rename" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -289,8 +304,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.rename" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.rename" />
       </list>
     </recent_temporary>
   </component>
@@ -350,32 +365,40 @@
       <option name="project" value="LOCAL" />
       <updated>1551342819788</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="改变视频帧的截取时间">
+      <created>1552199973133</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1552199973133</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-310" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2249467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2553542" sideWeight="0.50907713" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22405271" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15321252" sideWeight="0.49092284" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15321252" sideWeight="0.5121029" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21980414" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23068553" sideWeight="0.48789713" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13432837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3756178" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37540805" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40527183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,11 +448,19 @@
     <MESSAGE value="更改目录结构" />
     <MESSAGE value="更改目录结构2" />
     <MESSAGE value="讨论记录" />
-    <option name="LAST_COMMIT_MESSAGE" value="讨论记录" />
+    <MESSAGE value="改变视频帧的截取时间" />
+    <option name="LAST_COMMIT_MESSAGE" value="改变视频帧的截取时间" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/second_experiment/test.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -438,9 +469,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/py/paste_video_classification_vgg13.py" />
-    <entry file="file://$PROJECT_DIR$/py/video_frame_extract.py" />
-    <entry file="file://$PROJECT_DIR$/two_stream/two-stream.py" />
     <entry file="file://$PROJECT_DIR$/two_stream/LK_track.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2448">
@@ -600,7 +628,7 @@
     <entry file="file://E:/我的文档/我的照片/雪/rename.py" />
     <entry file="file://$PROJECT_DIR$/second_experiment/mkdir.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="0">
           <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           <folding />
         </state>
@@ -629,47 +657,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/second_experiment/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/我的文档/我的照片/刘雪/rename.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13_add_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="200" column="66" lean-forward="true" selection-start-line="200" selection-start-column="66" selection-end-line="200" selection-end-column="66" />
-          <folding>
-            <element signature="e#46#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="425">
-            <caret line="68" column="19" lean-forward="true" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+          <first_editor relative-caret-position="1445">
+            <caret line="85" column="36" lean-forward="false" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13_add_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2006">
+          <caret line="128" column="57" lean-forward="false" selection-start-line="128" selection-start-column="57" selection-end-line="128" selection-end-column="57" />
+          <folding>
+            <element signature="e#59#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/我的文档/我的照片/刘雪/rename.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="237" column="0" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/second_experiment/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract_test_1920_1080.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="206">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding>
+            <element signature="e#80#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="e#152#161#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
