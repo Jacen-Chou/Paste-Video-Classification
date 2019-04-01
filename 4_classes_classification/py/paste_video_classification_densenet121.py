@@ -33,7 +33,7 @@ num_classes = 4
 # In[2]:
 
 
-# 加载vgg16预训练模型
+# 加载densenet121预训练模型
 model = models.densenet121(pretrained=False)
 model.classifier = nn.Linear(64, num_classes)
 
