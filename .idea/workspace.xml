@@ -2,13 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3b618c2-e395-40c9-a2ec-39b5690f3343" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/ExpRecord.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract_temp.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/second_experiment/crop_five_regions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/second_experiment/create_paste_labels_dataset.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/second_experiment/create_paste_labels_dataset_2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/second_experiment/crop_all_regions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/second_experiment/edge_detection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/second_experiment/gamma_transfer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/second_experiment/rename.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/second_experiment/small_datasets.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/second_experiment/video_frame_extract_nfca.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/second_experiment/video_frame_extract_nfca_1920.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/second_experiment/voc2008/copy_img.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Paste-Video-Classification.iml" afterPath="$PROJECT_DIR$/.idea/Paste-Video-Classification.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4_classes_classification/py/paste_video_classification_densenet121.py" afterPath="$PROJECT_DIR$/4_classes_classification/py/paste_video_classification_densenet121.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calc_param_num.ipynb" afterPath="$PROJECT_DIR$/calc_param_num.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/ExpRecord.md" afterPath="$PROJECT_DIR$/docs/ExpRecord.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/README.md" afterPath="$PROJECT_DIR$/docs/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract.py" afterPath="$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13_add_test.py" afterPath="$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13_add_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/second_experiment/calc_normalize_args.py" afterPath="$PROJECT_DIR$/second_experiment/calc_normalize_args.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/second_experiment/crop_five_regions.py" afterPath="$PROJECT_DIR$/second_experiment/crop_five_regions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/second_experiment/mkdir.py" afterPath="$PROJECT_DIR$/second_experiment/mkdir.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/second_experiment/test.py" afterPath="$PROJECT_DIR$/second_experiment/test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,31 +33,49 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Paste_Video_Classification$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1547014402563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/two_stream" />
-    <SUITE FILE_PATH="coverage/Paste_Video_Classification$video_frame_extract.coverage" NAME="video_frame_extract Coverage Results" MODIFIED="1548230670188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
-    <SUITE FILE_PATH="coverage/Paste_Video_Classification$LK_track.coverage" NAME="LK_track Coverage Results" MODIFIED="1546943125214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/two_stream" />
-    <SUITE FILE_PATH="coverage/Paste_Video_Classification$rename.coverage" NAME="rename Coverage Results" MODIFIED="1554088766932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/我的文档/我的照片/刘雪" />
     <SUITE FILE_PATH="coverage/Paste_Video_Classification$rename__1_.coverage" NAME="rename (1) Coverage Results" MODIFIED="1551147772609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/我的文档/我的照片/刘雪" />
-    <SUITE FILE_PATH="coverage/Paste_Video_Classification$test.coverage" NAME="test Coverage Results" MODIFIED="1552371017965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
-    <SUITE FILE_PATH="coverage/Paste_Video_Classification$ash_sand_1_16_video_frame_extract_test_1920_2A1080.coverage" NAME="ash_sand_1_16_video_frame_extract_test_1920%2A1080 Coverage Results" MODIFIED="1551927334117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
-    <SUITE FILE_PATH="coverage/Paste_Video_Classification$mkdir.coverage" NAME="mkdir Coverage Results" MODIFIED="1548172739693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$create_paste_labels_dataset.coverage" NAME="create_paste_labels_dataset Coverage Results" MODIFIED="1557378189396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$crop_five_regions.coverage" NAME="crop_five_regions Coverage Results" MODIFIED="1556964027834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$gamma_transfer.coverage" NAME="gamma_transfer Coverage Results" MODIFIED="1557501520439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$test.coverage" NAME="test Coverage Results" MODIFIED="1577156262259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$video_frame_extract.coverage" NAME="video_frame_extract Coverage Results" MODIFIED="1548230670188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$copy_img.coverage" NAME="copy_img Coverage Results" MODIFIED="1563339435620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment/voc2008" />
     <SUITE FILE_PATH="coverage/Paste_Video_Classification$ash_sand_1_16_video_frame_extract_test_1920_1080.coverage" NAME="ash_sand_1_16_video_frame_extract_test_1920_1080 Coverage Results" MODIFIED="1552012003040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
-    <SUITE FILE_PATH="coverage/Paste_Video_Classification$paste_video_classification_vgg16_add_matrix.coverage" NAME="paste_video_classification_vgg16_add_matrix Coverage Results" MODIFIED="1548650980592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/4_classes_classification/py" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$edge_detection.coverage" NAME="edge_detection Coverage Results" MODIFIED="1563348169831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$video_frame_extract_nfca.coverage" NAME="video_frame_extract_nfca Coverage Results" MODIFIED="1577703401122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1547014402563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/two_stream" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$create_paste_labels_dataset_2.coverage" NAME="create_paste_labels_dataset_2 Coverage Results" MODIFIED="1557390119245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$mkdir.coverage" NAME="mkdir Coverage Results" MODIFIED="1557476623735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$aaa.coverage" NAME="aaa Coverage Results" MODIFIED="1577111347195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$rename.coverage" NAME="rename Coverage Results" MODIFIED="1578459224155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../我的文档/我的照片/刘雪" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$video_frame_extract_nfca_1920.coverage" NAME="video_frame_extract_nfca_1920 Coverage Results" MODIFIED="1577780741450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
     <SUITE FILE_PATH="coverage/Paste_Video_Classification$mkdir__1_.coverage" NAME="mkdir (1) Coverage Results" MODIFIED="1548162138325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
-    <SUITE FILE_PATH="coverage/Paste_Video_Classification$crop_five_regions.coverage" NAME="crop_five_regions Coverage Results" MODIFIED="1553601445698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
     <SUITE FILE_PATH="coverage/Paste_Video_Classification$stability_test_img.coverage" NAME="stability_test_img Coverage Results" MODIFIED="1550819866024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$paste_video_classification_vgg16_add_matrix.coverage" NAME="paste_video_classification_vgg16_add_matrix Coverage Results" MODIFIED="1548650980592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/4_classes_classification/py" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$LK_track.coverage" NAME="LK_track Coverage Results" MODIFIED="1546943125214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/two_stream" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1577153402886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/second_experiment" />
+    <SUITE FILE_PATH="coverage/Paste_Video_Classification$ash_sand_1_16_video_frame_extract_test_1920_2A1080.coverage" NAME="ash_sand_1_16_video_frame_extract_test_1920%2A1080 Coverage Results" MODIFIED="1551927334117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ExpRecord.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docs/ExpRecord.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="238">
-                <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="video_frame_extract_nfca.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/second_experiment/video_frame_extract_nfca.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding>
+                <element signature="e#178#191#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="video_frame_extract_nfca_1920.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/second_experiment/video_frame_extract_nfca_1920.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,6 +99,24 @@
       <find>tr</find>
       <find>*</find>
       <find>learning_rate</find>
+      <find>hfli</find>
+      <find>randomresi</find>
+      <find>randomhor</find>
+      <find>totens</find>
+      <find>totensor</find>
+      <find>ToTensor</find>
+      <find>Normalize</find>
+      <find>dir_names2</find>
+      <find>header</find>
+      <find>output</find>
+      <find>_run_network</find>
+      <find>UNet</find>
+      <find>device</find>
+      <find>1000</find>
+      <find>[4`] =</find>
+      <find>400</find>
+      <find>frame_stop</find>
+      <find>c</find>
     </findStrings>
     <replaceStrings>
       <replace>81</replace>
@@ -73,6 +124,10 @@
       <replace>77</replace>
       <replace>75</replace>
       <replace>_</replace>
+      <replace>1200</replace>
+      <replace>.append(</replace>
+      <replace>200</replace>
+      <replace>frame_stop[density]</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -91,7 +146,6 @@
         <option value="F:/膏体视频/mkdir.py" />
         <option value="F:/膏体视频/video_frame_extract.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/second_experiment/mkdir.py" />
         <option value="$PROJECT_DIR$/4_classes_classification/py/paste_video_classification_vgg16_add_matrix.py" />
         <option value="E:/我的文档/我的照片/雪/rename.py" />
         <option value="$PROJECT_DIR$/second_experiment/stability_test_img.py" />
@@ -100,17 +154,35 @@
         <option value="$USER_HOME$/Desktop/ash_sand_1_16_video_frame_extract_test_1920%2A1080.py" />
         <option value="$USER_HOME$/Desktop/ash_sand_1_16_video_frame_extract_test_1920_1080.py" />
         <option value="$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract_test_1920_1080.py" />
-        <option value="$PROJECT_DIR$/second_experiment/calc_normalize_args.py" />
-        <option value="$PROJECT_DIR$/second_experiment/test.py" />
-        <option value="$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13_add_test.py" />
         <option value="$PROJECT_DIR$/second_experiment/video_frame_extract.py" />
         <option value="$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract_temp.py" />
-        <option value="$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract.py" />
         <option value="$PROJECT_DIR$/4_classes_classification/py/paste_video_classification_densenet121.py" />
         <option value="$PROJECT_DIR$/second_experiment/crop_five_regions.py" />
-        <option value="E:/我的文档/我的照片/刘雪/rename.py" />
+        <option value="$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract.py" />
+        <option value="$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract_temp2.py" />
+        <option value="$PROJECT_DIR$/second_experiment/copy_3000_to_750.py" />
+        <option value="$PROJECT_DIR$/second_experiment/small_datasets.py" />
+        <option value="$PROJECT_DIR$/second_experiment/create_paste_labels_dataset.py" />
+        <option value="$PROJECT_DIR$/second_experiment/calc_normalize_args.py" />
+        <option value="$PROJECT_DIR$/second_experiment/create_paste_labels_dataset_2.py" />
+        <option value="$PROJECT_DIR$/second_experiment/mkdir.py" />
+        <option value="$PROJECT_DIR$/second_experiment/gamma_transfer.py" />
+        <option value="$PROJECT_DIR$/second_experiment/rename.py" />
         <option value="$PROJECT_DIR$/docs/README.md" />
+        <option value="$PROJECT_DIR$/second_experiment/crop_all_regions.py" />
+        <option value="$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13_add_test.py" />
+        <option value="$PROJECT_DIR$/second_experiment/edge_detection.py" />
+        <option value="$PROJECT_DIR$/second_experiment/voc2008/copy_img.py" />
         <option value="$PROJECT_DIR$/docs/ExpRecord.md" />
+        <option value="$PROJECT_DIR$/calc_param_num.py" />
+        <option value="$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13.ipynb" />
+        <option value="E:/我的文档/我的照片/刘雪/rename.py" />
+        <option value="$PROJECT_DIR$/second_experiment/aaa.py" />
+        <option value="$PROJECT_DIR$/second_experiment/test2.py" />
+        <option value="$PROJECT_DIR$/second_experiment/test.py" />
+        <option value="$PROJECT_DIR$/second_experiment/video_frame_extract_nfca.py" />
+        <option value="$PROJECT_DIR$/second_experiment/video_frame_extract_nfca_1920.py" />
+        <option value="$PROJECT_DIR$/../../我的文档/我的照片/刘雪/rename.py" />
       </list>
     </option>
   </component>
@@ -121,10 +193,29 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1645" />
-    <option name="y" value="-125" />
-    <option name="width" value="1366" />
-    <option name="height" value="728" />
+    <option name="x" value="191" />
+    <option name="y" value="44" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -144,6 +235,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,13 +258,13 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/PythonVirEnvs/paste_env/Scripts/python.exe" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -186,7 +278,9 @@
       <recent name="E:\PythonProjects\Paste-Video-Classification\two_stream" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeapadFile\PythonProjects\Paste-Video-Classification\second_experiment" />
       <recent name="E:\PythonProjects\Paste-Video-Classification\second_experiment" />
+      <recent name="E:\PythonProjects\Paste-Video-Classification\4_classes_classification\images\train\82" />
       <recent name="E:\PythonProjects\Paste-Video-Classification\two_stream" />
     </key>
   </component>
@@ -210,13 +304,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="E:/我的文档/我的照片/刘雪" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../我的文档/我的照片/刘雪" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Paste-Video-Classification" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:/我的文档/我的照片/刘雪/rename.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../我的文档/我的照片/刘雪/rename.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -332,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552460673168</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="增加实验记录">
+      <created>1554098858883</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1554098858884</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -345,28 +446,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-310" width="1936" height="1056" extended-state="6" />
+    <frame x="-9" y="-9" width="2578" height="1408" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.141258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15321252" sideWeight="0.5121029" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.073083065" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25949878" sideWeight="0.5151286" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19951534" sideWeight="0.48487142" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2383025" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20674646" sideWeight="0.48789713" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279483" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22995462" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30313015" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3441034" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23394994" sideWeight="0.49394855" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Anonymous Apex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="SOQL Query" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40527183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Log Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -424,11 +528,19 @@
     <MESSAGE value="删除ipynb" />
     <MESSAGE value="add 模板1.0" />
     <MESSAGE value="update 模板2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 模板2.0" />
+    <MESSAGE value="增加实验记录" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加实验记录" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="45" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -437,291 +549,221 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/py/paste_video_classification_vgg13.py" />
-    <entry file="file://$PROJECT_DIR$/py/test.py" />
-    <entry file="file://$PROJECT_DIR$/py/paste_video_classification.py" />
-    <entry file="file://$PROJECT_DIR$/two_stream/two_stream_fusion.py">
+    <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="123" column="64" lean-forward="false" selection-start-line="123" selection-start-column="64" selection-end-line="123" selection-end-column="64" />
+        <state relative-caret-position="-612">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/two_stream/LK_track.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="58" column="19" lean-forward="false" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/two_stream/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="135" column="18" lean-forward="false" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/two_stream/two-stream-flow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py/video_frame_extract.py" />
-    <entry file="file://F:/膏体视频/mkdir.py" />
-    <entry file="file://F:/膏体视频/video_frame_extract.py" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/second_experiment/use_pure_vgg13_test_2_classes.py" />
-    <entry file="file://$PROJECT_DIR$/4_classes_classification/py/paste_video_classification_vgg16.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torchvision/datasets/folder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4_classes_classification/py/paste_video_classification_vgg16_add_matrix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="146" column="25" lean-forward="false" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/我的文档/我的照片/雪/rename.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/nn/modules/loss.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torch/nn/functional.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pandas/io/parsers.py" />
     <entry file="file://$PROJECT_DIR$/second_experiment/mkdir.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        <state relative-caret-position="17">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/second_experiment/stability_test_img.py" />
-    <entry file="file://$USER_HOME$/Desktop/video_frame_extract.py" />
-    <entry file="file://$PROJECT_DIR$/second_experiment/test.txt" />
-    <entry file="file://$PROJECT_DIR$/second_experiment/video_frame_extract-Copy.py" />
-    <entry file="file://$USER_HOME$/Desktop/ash_sand_1_16_video_frame_extract_test_1920%2A1080.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/241980198/cv2/cv2/VideoCapture.py">
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/_bootlocale.py" />
+    <entry file="file://$PROJECT_DIR$/second_experiment/calc_normalize_args.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="150" column="8" lean-forward="false" selection-start-line="150" selection-start-column="8" selection-end-line="150" selection-end-column="8" />
+        <state relative-caret-position="1173">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/ash_sand_1_16_video_frame_extract_test_1920_1080.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/codecs.py">
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torchvision/models/resnet.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torchvision/models/vgg.py" />
+    <entry file="file://$PROJECT_DIR$/second_experiment/crop_all_regions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/os.py">
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torchvision/models/densenet.py" />
+    <entry file="file://$PROJECT_DIR$/second_experiment/gamma_transfer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="237" column="0" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="17" column="61" lean-forward="false" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract_test_1920_1080.py" />
-    <entry file="file://$PROJECT_DIR$/second_experiment/calc_normalize_args.txt">
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torchvision/transforms/__init__.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torchvision/datasets/folder.py" />
+    <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_paste_labels_little_train.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/second_experiment/test.py">
+    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/241980198/cv2/cv2/__init__.py" />
+    <entry file="file://$USER_HOME$/Desktop/2007_000027.xml" />
+    <entry file="file://$USER_HOME$/Desktop/trainval.txt" />
+    <entry file="file://$USER_HOME$/Desktop/train.txt" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/BNZ.5d2ddec3aa07919/bus_train.txt" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/BNZ.5d2ddebaaa05788/bicycle_train.txt" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/BNZ.5d2dded1aa0b325/motorbike_train.txt" />
+    <entry file="file://$USER_HOME$/Desktop/aeroplane_train.txt" />
+    <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_paste_labels.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="134" column="34" lean-forward="false" selection-start-line="134" selection-start-column="34" selection-end-line="134" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/second_experiment/create_paste_labels_dataset_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/second_experiment/voc2008/copy_img.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/second_experiment/edge_detection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torchvision/transforms/transforms.py" />
+    <entry file="file://$PROJECT_DIR$/second_experiment/small_datasets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13_add_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        <state relative-caret-position="726">
+          <caret line="47" column="30" lean-forward="false" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/numpy/random/__init__.py">
+    <entry file="file://$PROJECT_DIR$/docs/README.md" />
+    <entry file="file://$PROJECT_DIR$/second_experiment/rename.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="101" column="7" lean-forward="false" selection-start-line="101" selection-start-column="7" selection-end-line="101" selection-end-column="7" />
+        <state relative-caret-position="170">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract_temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+    <entry file="file://$PROJECT_DIR$/calc_param_num.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/second_experiment/calc_normalize_args.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_video_frame_extract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding>
-            <element signature="e#208#217#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/second_experiment/train_200_1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/second_experiment/video_frame_extract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4_classes_classification/py/train.py">
+    <entry file="file://$PROJECT_DIR$/calc_param_num" />
+    <entry file="file://$PROJECT_DIR$/calc_param_num.py" />
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/4_classes_classification/py/video_frame_extract.py">
+    <entry file="file://$PROJECT_DIR$/second_experiment/create_paste_labels_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        <state relative-caret-position="204">
+          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torchvision/models/vgg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1557">
-          <caret line="113" column="4" lean-forward="false" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
+    <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_photo_classification_vgg13.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/second_experiment/crop_five_regions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4_classes_classification/py/paste_video_classification_resnet50.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/241980198/cv2/cv2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122077">
-          <caret line="7194" column="4" lean-forward="false" selection-start-line="7194" selection-start-column="4" selection-end-line="7194" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torchvision/models/resnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3009">
-          <caret line="179" column="4" lean-forward="false" selection-start-line="179" selection-start-column="4" selection-end-line="179" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4_classes_classification/py/paste_video_classification_vgg13.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/torchvision/models/densenet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3570">
-          <caret line="215" column="42" lean-forward="false" selection-start-line="215" selection-start-column="42" selection-end-line="215" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4_classes_classification/py/paste_video_classification_densenet121.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/我的文档/我的照片/刘雪/rename.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/ExpRecord">
+    <entry file="file://E:/我的文档/我的照片/刘雪/rename.py" />
+    <entry file="file://$PROJECT_DIR$/second_experiment/ash_sand_1_16_paste_labels_little.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="629">
-            <caret line="105" column="24" lean-forward="true" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/ExpRecord.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="238">
-            <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-            <folding />
-          </first_editor>
-          <second_editor />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.2/system/python_stubs/-1453563693/cv2/cv2/VideoCapture.py" />
+    <entry file="file://$PROJECT_DIR$/second_experiment/crop_five_regions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/second_experiment/video_frame_extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="59" column="31" lean-forward="false" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/PythonVirEnvs/paste_env/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/second_experiment/test2.py" />
+    <entry file="file://$PROJECT_DIR$/second_experiment/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/second_experiment/video_frame_extract_nfca.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <element signature="e#178#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../我的文档/我的照片/刘雪/rename.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/WeChat Files/zjc774845313/FileStorage/File/2020-01/nfca_db_oprator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="116" column="8" lean-forward="true" selection-start-line="116" selection-start-column="8" selection-end-line="116" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/second_experiment/video_frame_extract_nfca_1920.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

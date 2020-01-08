@@ -29,8 +29,8 @@ density = 200
 
 while True:
     # 定义要创建的目录
-    mkpath1 = "F:/paste_videos/images_ash_sand_1_16/train/" + str(density)
-    mkpath2 = "F:/paste_videos/images_ash_sand_1_16/validation/" + str(density)
+    mkpath1 = "./gamma_test/" + str(density)
+    mkpath2 = "./gamma_test/" + str(density)
     # 调用函数
     mkdir(mkpath1)
     mkdir(mkpath2)
